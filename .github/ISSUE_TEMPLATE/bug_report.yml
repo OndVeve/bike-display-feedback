@@ -1,0 +1,74 @@
+name: Bug Report
+description: Report a problem with Bike Display
+title: "[Bug]: "
+labels:
+  - bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Bike Display.
+        Please provide as much information as possible.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - iOS
+        - Garmin watch
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      placeholder: "Example: Android 1.2.1"
+    validations:
+      required: true
+
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model
+      placeholder: "Example: Samsung Galaxy S25"
+
+  - type: input
+    id: garmin-watch
+    attributes:
+      label: Garmin watch model
+      placeholder: "Example: Garmin Fenix 7"
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Please describe the problem and what you expected to happen.
+      placeholder: Describe the problem here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What steps cause the problem?
+      placeholder: |
+        1. Open the app
+        2. Start a ride
+        3. ...
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or diagnostic logs
+      description: You can drag and drop screenshots or files here.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email
+      description: Optional – only if we need to contact you for more information.
